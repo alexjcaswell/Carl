@@ -1,0 +1,30 @@
+body {
+	background-color: black;
+}
+
+#text {
+	position: absolute;
+	margin-top: 200pt;
+	color: orange;
+	font-size: 100pt;
+    -webkit-animation: rotation 5s infinite linear;
+    z-index: 100;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    -webkit-animation: rotation 1s infinite linear;
+    z-index: 0;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
